@@ -104,10 +104,13 @@ footer {
   /* border:1px solid red; */
   max-width:33%;
   min-width:350px;
+  z-index:2;
   
   }
   
-
+.product:hover{
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
   [class*="col-"]{
  
    width:100%;
@@ -133,6 +136,7 @@ footer {
 				margin-left:50px;
 				height:320px;
 				width:320px;
+				 z-index:-1;
             }
 #cBox{
    width:20px;
@@ -149,6 +153,23 @@ footer {
   //color:red;
   //vertical-align:center; */
   
+}
+.zoom {
+  /* padding: 50px;
+  background-color: green;*/
+  transition: transform 3s;
+ /* width: 200px;
+  height: 200px;
+  margin: 0 auto; */
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  
+  transform: scale(.4); 
+  z-index:-1;
+ 
 }
 </style>
 
@@ -168,10 +189,10 @@ footer {
 <section>
 <div class="row">
 
-<div class="col-3 product">
+<div class="col-3 product ">
 <p style="display:block;">Shoe Name </p>
 <p class="bootsPrice" style="float:right;display:inline;background-color:red;">Ksh 4000</p>
-<img class="lazy" src="shoesImages/lazy.gif" data-src="shoesImages/0.jpg" width="320" heigh="240"><br>
+<img class="lazy zoom" src="shoesImages/lazy.gif" data-src="shoesImages/0.jpg" width="320" heigh="240"><br>
 
 <div id="imgFooter">
 <input type="checkbox" id="cBox" name="#" value="whiteyellow"> Select this item for purchase&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
@@ -183,7 +204,7 @@ footer {
 <div class="col-3 product">
 <p style="display:block;">Shoe Name</p>
 <p class="bootsPrice" style="float:right;display:inline;background-color:red;">Ksh 4000</p>
-<img class="lazy" src="shoesImages/lazy.gif" data-src="shoesImages/1.jpg" width="320" heigh="240"><br>
+<img class="lazy zoom" src="shoesImages/lazy.gif" data-src="shoesImages/1.jpg" width="320" heigh="240"><br>
 
 
 <div id="imgFooter">
@@ -196,7 +217,7 @@ footer {
 <div class="col-3 product">
 <p style="display:block;">Shoe Name</p>
 <p class="bootsPrice" style="float:right;display:inline;background-color:red;">Ksh 4000</p>
-<img class="lazy" src="shoesImages/lazy.gif" data-src="shoesImages/2.jpg" width="320" heigh="240"><br>
+<img class="lazy zoom" src="shoesImages/lazy.gif" data-src="shoesImages/2.jpg" width="320" heigh="240"><br>
 
 
 <div id="imgFooter">
@@ -209,7 +230,7 @@ footer {
 <div class="col-3 product">
 <p style="display:block;">Shoe Name</p>
 <p class="bootsPrice" style="float:right;display:inline;background-color:red;">Ksh 4000</p>
-<img class="lazy" src="shoesImages/lazy.gif" data-src="shoesImages/3.jpg" width="320" heigh="240"><br>
+<img class="lazy zoom" src="shoesImages/lazy.gif" data-src="shoesImages/3.jpg" width="320" heigh="240"><br>
 
 
 <div id="imgFooter">
@@ -221,7 +242,7 @@ footer {
 <div class="col-3 product">
 <p style="display:block;">Shoe Name</p>
 <p class="bootsPrice" style="float:right;display:inline;background-color:red;">Ksh 4000</p>
-<img class="lazy" src="shoesImages/lazy.gif" data-src="shoesImages/4.jpg" width="320" heigh="240"><br>
+<img class="lazy zoom" src="shoesImages/lazy.gif" data-src="shoesImages/4.jpg" width="320" heigh="240"><br>
 
 <div id="imgFooter">
 <input type="checkbox" id="cBox" name="#" value="whiteyellow"> Select this item for purchase&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
@@ -233,7 +254,7 @@ footer {
 <div class="col-3 product">
 <p style="display:block;">Shoe Name</p>
 <p class="bootsPrice" style="float:right;display:inline;background-color:red;">Ksh 4000</p>
-<img class="lazy" src="shoesImages/lazy.gif" data-src="shoesImages/5.jpg" width="320" heigh="240"><br>
+<img class="lazy zoom" src="shoesImages/lazy.gif" data-src="shoesImages/5.jpg" width="320" heigh="240"><br>
 
 <div id="imgFooter">
 <input type="checkbox" id="cBox" name="#" value="whiteyellow"> Select this item for purchase&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
@@ -245,7 +266,7 @@ footer {
 <div class="col-3 product">
 <p style="display:block;">Shoe Name</p>
 <p class="bootsPrice" style="float:right;display:inline;background-color:red;">Ksh 4000</p>
-<img class="lazy" src="shoesImages/lazy.gif" data-src="shoesImages/6.jpg" width="320" heigh="240"><br>
+<img class="lazy zoom" src="shoesImages/lazy.gif" data-src="shoesImages/6.jpg" width="320" heigh="240"><br>
 
 <div id="imgFooter">
 <input type="checkbox" id="cBox" name="#" value="whiteyellow"> Select this item for purchase&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
@@ -269,7 +290,7 @@ footer {
 <div class="col-3 product">
 <p style="display:block;">Shoe Name</p>
 <p class="bootsPrice" style="float:right;display:inline;background-color:red;">Ksh 4000</p>
-<img class="lazy" src="shoesImages/lazy.gif" data-src="shoesImages/8.jpg" width="320" heigh="240"><br>
+<img class="lazy zoom" src="shoesImages/lazy.gif" data-src="shoesImages/8.jpg" width="320" heigh="240"><br>
 
 <div id="imgFooter">
 <input type="checkbox" id="cBox" name="#" value="whiteyellow"> Select this item for purchase&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
